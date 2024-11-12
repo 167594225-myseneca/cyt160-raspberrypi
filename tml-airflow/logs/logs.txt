@@ -12214,3 +12214,13 @@ Already up to date.
 [INFO 2024-11-12_04:28:53] TML Solution Studio: DELETE initiated for project iotproj02-4a57 by 167594225-myseneca
 [INFO 2024-11-12_04:28:53] TML Solution Studio: GIT REPO iotproj02-4a57 DELETED by 167594225-myseneca
 [INFO 2024-11-12_04:28:53] TML Solution Studio: LOCAL DOCKER IMAGE iotproj02-4a57-amd64 DELETED by xXjona18Xx
+[INFO 2024-11-12_04:31:32] TML Solution Studio: TML Project Creation: Creating new TML project: /cyt160-raspberrypi/tml-airflow/dags/tml-solutions/testdeployment-4a57
+[INFO 2024-11-12_04:31:32] TML Solution Studio: git pull --rebase --autostash origin main Status: From https://github.com/167594225-myseneca/cyt160-raspberrypi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[INFO 2024-11-12_04:32:12] TML Solution Studio: Starting Git commit process for project: testdeployment-4a57
+[INFO 2024-11-12_04:32:12] TML Solution Studio: git commit -a Status for project testdeployment-4a57: fatal: paths 'project ...' with -a does not make sense
+[INFO 2024-11-12_04:32:14] TML Solution Studio: git push origin main Status: Everything up-to-date
+[INFO 2024-11-12_04:32:14] TML Solution Studio: git add . Status: 
+[INFO 2024-11-12_04:32:14] TML Solution Studio: git commit -a Status for project testdeployment-4a57: fatal: paths 'project ...' with -a does not make sense
+[INFO 2024-11-12_04:32:17] TML Solution Studio: git push Status for project testdeployment-4a57: Everything up-to-date
