@@ -12185,3 +12185,6 @@ Already up to date.
 [INFO 2024-11-12_03:13:37] TML Solution Studio: git add . Status: 
 [INFO 2024-11-12_03:13:37] TML Solution Studio: git commit -a Status for project testproj02-4a57: fatal: paths 'project ...' with -a does not make sense
 [INFO 2024-11-12_03:13:38] TML Solution Studio: git push Status for project testproj02-4a57: Everything up-to-date
+[INFO 2024-11-12_03:15:22] TML Solution Studio: DELETE initiated for project testproj02-4a57 by 167594225-myseneca
+[INFO 2024-11-12_03:15:22] TML Solution Studio: GIT REPO testproj02-4a57 DELETED by 167594225-myseneca
+[INFO 2024-11-12_03:15:22] TML Solution Studio: LOCAL DOCKER IMAGE testproj02-4a57-amd64 DELETED by xXjona18Xx
