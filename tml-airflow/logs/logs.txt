@@ -12319,3 +12319,4 @@ Already up to date.
 [INFO 2024-11-14_17:40:01] Deleting topic ml-data in tml_system_step_2_kafka_createtopic_dag-cybersecuritywithprivategpt-4a57.py
 [INFO 2024-11-14_17:40:11] Deleting topic prediction-data in tml_system_step_2_kafka_createtopic_dag-cybersecuritywithprivategpt-4a57.py
 [INFO 2024-11-14_17:40:21] Deleting topic cisco-network-privategpt in tml_system_step_2_kafka_createtopic_dag-cybersecuritywithprivategpt-4a57.py
+[INFO 2024-11-14_17:40:59] Localfile producing DAG in tml_read_LOCALFILE_step_3_kafka_producetotopic_dag-cybersecuritywithprivategpt-4a57.py
