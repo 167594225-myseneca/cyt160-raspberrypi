@@ -12462,3 +12462,4 @@ branch.main.merge=refs/heads/main
 origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt160-raspberrypi.git (push)
 [INFO 2024-11-19_18:15:19] Deleting topic cisco-network-mainstream in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
 [INFO 2024-11-19_18:15:27] Deleting topic cisco-network-preprocess in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
+[INFO 2024-11-19_18:15:37] Deleting topic ml-data in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
