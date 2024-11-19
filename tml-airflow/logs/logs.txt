@@ -12442,3 +12442,4 @@ origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt1
 [INFO 2024-11-19_17:48:39] Deleting topic ml-data in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
 [INFO 2024-11-19_17:48:49] Deleting topic prediction-data in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
 [INFO 2024-11-19_17:48:59] Deleting topic cisco-network-privategpt in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
+[INFO 2024-11-19_17:49:36] Localfile producing DAG in tml_read_LOCALFILE_step_3_kafka_producetotopic_dag-cyt160proj02-4a57.py
