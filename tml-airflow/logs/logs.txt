@@ -12469,3 +12469,4 @@ origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt1
 [INFO 2024-11-19_18:16:49] Preprocessing DAG in tml_system_step_4_kafka_preprocess_dag-cyt160proj02-4a57.py
 [INFO 2024-11-19_18:16:59] Visualization DAG in tml_system_step_7_kafka_visualization_dag-cyt160proj02-4a57.py
 [INFO 2024-11-19_18:17:39] Docker DAG in tml_system_step_8_deploy_solution_to_docker_dag-cyt160proj02-4a57.py
+[INFO 2024-11-19_18:19:08] {'name': ['Project with slug "cyt160proj02-4a57" already exists.']}
