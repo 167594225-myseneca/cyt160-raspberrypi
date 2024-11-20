@@ -19,7 +19,7 @@ default_args = {
  'brokerport' : '9092',     # <<<<***************** LOCAL AND CLOUD KAFKA listen on PORT 9092
  'cloudusername' : '',  # <<<< --THIS WILL BE UPDATED FOR YOU IF USING KAFKA CLOUD WITH API KEY  - LEAVE BLANK
  'cloudpassword' : '',  # <<<< --THIS WILL BE UPDATED FOR YOU IF USING KAFKA CLOUD WITH API SECRET - LEAVE BLANK   
- 'solutionname': '_mysolution_',   # <<< *** DO NOT MODIFY - THIS WILL BE AUTOMATICALLY UPDATED
+ 'solutionname': 'myawesometmlsolution-4a57',   # <<< *** DO NOT MODIFY - THIS WILL BE AUTOMATICALLY UPDATED
  'solutiontitle': 'My Solution Title', # <<< *** Provide a descriptive title for your solution
  'solutionairflowport' : '-1', # << If -1, TSS will choose a free port randonly, or set this to a fixed number
  'solutionexternalport' : '-1', # << If -1, TSS will choose a free port randonly, or set this to a fixed number
@@ -55,9 +55,6 @@ default_args = {
  'MYSQLMAXLIFETIMEMINUTES' : '4',
  'MYSQLMAXCONN' : '4',
  'MYSQLMAXIDLE' : '10',
- 'MYSQLHOSTNAME' : '127.0.0.1:3306',   
- 'MYSQLDB' : 'tmlids',
- 'MYSQLUSER' : 'root',    
  'SASLMECHANISM' : 'PLAIN',
  'MINFORECASTACCURACY' : '55',
  'COMPRESSIONTYPE' : 'gzip',
@@ -75,7 +72,7 @@ default_args = {
 
 ############################################################### DO NOT MODIFY BELOW ####################################################
 # Instantiate your DAG
-@dag(dag_id="tml_system_step_1_getparams_dag", default_args=default_args, tags=["tml_system_step_1_getparams_dag"], schedule=None, catchup=False)
+@dag(dag_id="tml_system_step_1_getparams_dag_myawesometmlsolution-4a57", default_args=default_args, tags=["tml_system_step_1_getparams_dag_myawesometmlsolution-4a57"], schedule=None, catchup=False)
 def tmlparams():
     # Define tasks
     def empty():
@@ -240,12 +237,6 @@ def updateviperenv():
          data[r] = "KUBERNETES={}\n".format(default_args['KUBERNETES'])                
        if 'COMPANYNAME' in d: 
          data[r] = "COMPANYNAME={}\n".format(default_args['COMPANYNAME'])                
-       if 'MYSQLHOSTNAME' in d: 
-         data[r] = "MYSQLHOSTNAME={}\n".format(default_args['MYSQLHOSTNAME'])                
-       if 'MYSQLDB' in d: 
-         data[r] = "MYSQLDB={}\n".format(default_args['MYSQLDB'])                
-       if 'MYSQLUSER' in d: 
-         data[r] = "MYSQLUSER={}\n".format(default_args['MYSQLUSER'])                
 
        r += 1
      with open(mainfile, 'w', encoding='utf-8') as file: 
