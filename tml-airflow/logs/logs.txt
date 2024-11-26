@@ -12489,3 +12489,16 @@ origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt1
 [INFO 2024-11-20_17:44:41] TML Solution Studio: DELETE initiated for project cybersecuritywithprivategpt-4a57 by 167594225-myseneca
 [INFO 2024-11-20_17:44:41] TML Solution Studio: GIT REPO cybersecuritywithprivategpt-4a57 DELETED by 167594225-myseneca
 [INFO 2024-11-20_17:44:41] TML Solution Studio: LOCAL DOCKER IMAGE cybersecuritywithprivategpt-4a57-amd64 DELETED by xXjona18Xx
+[INFO 2024-11-26_17:15:36] TML Solution Studio Started: DOCKERUSERNAME=xXjona18Xx, GITUSERNAME=167594225-myseneca, GITREPOURL=https://github.com/167594225-myseneca/cyt160-raspberrypi.git, AIRFLOWPORT=9000
+[INFO 2024-11-26_17:15:38] TML Solution Studio: Docker Login Status: Error response from daemon: Get "https://registry-1.docker.io/v2/": unauthorized: incorrect username or password
+[INFO 2024-11-26_17:15:38] TML Solution Studio: Github Config Status: core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/167594225-myseneca/cyt160-raspberrypi.git
+remote.origin.fetch=+refs/heads/main:refs/remotes/origin/main
+remote.origin.pushurl=https://<personal access token hidden>@github.com/167594225-myseneca/cyt160-raspberrypi.git
+branch.main.remote=origin
+branch.main.merge=refs/heads/main
+[INFO 2024-11-26_17:15:38] TML Solution Studio: Github Remote Status: origin	https://github.com/167594225-myseneca/cyt160-raspberrypi.git (fetch)
+origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt160-raspberrypi.git (push)

@@ -19,8 +19,8 @@ default_args = {
  'brokerport' : '9092',     # <<<<***************** LOCAL AND CLOUD KAFKA listen on PORT 9092
  'cloudusername' : '',  # <<<< --THIS WILL BE UPDATED FOR YOU IF USING KAFKA CLOUD WITH API KEY  - LEAVE BLANK
  'cloudpassword' : '',  # <<<< --THIS WILL BE UPDATED FOR YOU IF USING KAFKA CLOUD WITH API SECRET - LEAVE BLANK   
- 'solutionname': '_mysolution_',   # <<< *** DO NOT MODIFY - THIS WILL BE AUTOMATICALLY UPDATED
- 'solutiontitle': 'My Solution Title', # <<< *** Provide a descriptive title for your solution
+ 'solutionname': 'myawesometmlsolutionml-3f10',   # <<< *** DO NOT MODIFY - THIS WILL BE AUTOMATICALLY UPDATED
+ 'solutiontitle': 'Real-Time IoT Data Processing with Real-Time Entity Based Machine Learning', # <<< *** Provide a descriptive title for your solution
  'solutionairflowport' : '-1', # << If -1, TSS will choose a free port randonly, or set this to a fixed number
  'solutionexternalport' : '-1', # << If -1, TSS will choose a free port randonly, or set this to a fixed number
  'solutionvipervizport' : '-1', # << If -1, TSS will choose a free port randonly, or set this to a fixed number   
@@ -58,7 +58,7 @@ default_args = {
  'MYSQLHOSTNAME' : '127.0.0.1:3306',   
  'KUBEMYSQLHOSTNAME' : 'mysql-service:3306', # this is the mysql service in kubernetes   
  'MYSQLDB' : 'tmlids',
- 'MYSQLUSER' : 'root',    
+ 'MYSQLUSER' : 'root',      
  'SASLMECHANISM' : 'PLAIN',
  'MINFORECASTACCURACY' : '55',
  'COMPRESSIONTYPE' : 'gzip',
@@ -76,7 +76,7 @@ default_args = {
 
 ############################################################### DO NOT MODIFY BELOW ####################################################
 # Instantiate your DAG
-@dag(dag_id="tml_system_step_1_getparams_dag", default_args=default_args, tags=["tml_system_step_1_getparams_dag"], schedule=None, catchup=False)
+@dag(dag_id="tml_system_step_1_getparams_dag_myawesometmlsolutionml-3f10", default_args=default_args, tags=["tml_system_step_1_getparams_dag_myawesometmlsolutionml-3f10"], schedule=None, catchup=False)
 def tmlparams():
     # Define tasks
     def empty():

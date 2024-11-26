@@ -12,6 +12,7 @@ import tsslogging
 import shutil
 from git import Repo
 import time
+
 sys.dont_write_bytecode = True
 
 ######################################################USER CHOSEN PARAMETERS ###########################################################
@@ -25,7 +26,7 @@ default_args = {
 
 ############################################################### DO NOT MODIFY BELOW ####################################################
 # Instantiate your DAG
-@dag(dag_id="tml_system_step_10_documentation_dag", default_args=default_args, tags=["tml_system_step_10_documentation_dag"], schedule=None,  catchup=False)
+@dag(dag_id="tml_system_step_10_documentation_dag_cybersecuritywithprivategpt-4a57", default_args=default_args, tags=["tml_system_step_10_documentation_dag_cybersecuritywithprivategpt-4a57"], schedule=None,  catchup=False)
 def startdocumentation():
     # Define tasks
     def empty():
@@ -85,7 +86,7 @@ def doparse(fname,farr):
         file.writelines(data)
       except Exception as e:
          pass
-    
+       
 def generatedoc(**context):    
     istss1=1
     if 'TSS' in os.environ:
@@ -220,7 +221,7 @@ def generatedoc(**context):
     doparse("/{}/docs/source/operating.rst".format(sname), ["--datetime--;{}".format(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))])
     doparse("/{}/docs/source/logs.rst".format(sname), ["--datetime--;{}".format(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))])
     doparse("/{}/docs/source/kube.rst".format(sname), ["--datetime--;{}".format(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))])
-
+    
     if len(CLIENTPORT) > 1:
       doparse("/{}/docs/source/details.rst".format(sname), ["--CLIENTPORT--;{}".format(CLIENTPORT[1:])])
       doparse("/{}/docs/source/details.rst".format(sname), ["--TSSCLIENTPORT--;{}".format(TSSCLIENTPORT[1:])])

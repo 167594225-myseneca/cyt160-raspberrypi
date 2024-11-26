@@ -1,7 +1,4 @@
 # TSS Logging
-
-# TSS Logging
-
 import datetime
 from datetime import timezone 
 from git import Repo
@@ -16,9 +13,9 @@ def genkubeyaml(sname,containername,clientport,solutionairflowport,solutionviper
     cpp = ""
     if len(clientport) > 1:
         cp = """    - containerPort: {}
-             - containerPort: {}
-             - containerPort: {}
-             - containerPort: {}""".format(clientport,solutionairflowport,solutionvipervizport,solutionexternalport)
+            - containerPort: {}
+            - containerPort: {}
+            - containerPort: {}""".format(clientport,solutionairflowport,solutionvipervizport,solutionexternalport)
         cpp = clientport
         cs="""  - port: {}
          name: p1
@@ -39,8 +36,8 @@ def genkubeyaml(sname,containername,clientport,solutionairflowport,solutionviper
         
     else:    
         cp = """   - containerPort: {}
-             - containerPort: {}
-             - containerPort: {}""".format(solutionexternalport,solutionairflowport,solutionvipervizport)
+            - containerPort: {}
+            - containerPort: {}""".format(solutionexternalport,solutionairflowport,solutionvipervizport)
         cpp = "0"
         cs="""  - port: {}
          name: p2
@@ -73,72 +70,65 @@ def genkubeyaml(sname,containername,clientport,solutionairflowport,solutionviper
            containers:
            - name: {}
              image: {}
-             volumeMounts:
-             - name: dockerpath
-               mountPath: /var/run/docker.sock
-             ports:
-         {}
-             env:
-             - name: TSS
-               value: '0'
-             - name: SOLUTIONNAME
-               value: '{}'
-             - name: SOLUTIONDAG
-               value: '{}'
-             - name: GITUSERNAME
-               value: '{}'
-             - name: GITREPOURL
-               value: '{}'
-             - name: SOLUTIONEXTERNALPORT
-               value: '{}'
-             - name: CHIP
-               value: '{}'
-             - name: SOLUTIONAIRFLOWPORT
-               value: '{}'
-             - name: SOLUTIONVIPERVIZPORT
-               value: '{}'
-             - name: DOCKERUSERNAME
-               value: '{}'
-             - name: CLIENTPORT
-               value: '{}'
-             - name: EXTERNALPORT
-               value: '{}'
-             - name: KAFKACLOUDUSERNAME
-               value: '{}'
-             - name: VIPERVIZPORT
-               value: '{}'
-             - name: MQTTUSERNAME
-               value: '{}'
-             - name: AIRFLOWPORT
-               value: '{}'
-             - name: GITPASSWORD
-               value: '<ENTER GITHUB PASSWORD>'
-             - name: KAFKACLOUDPASSWORD
-               value: '<Enter API secret>'
-             - name: MQTTPASSWORD
-               value: '<ENTER MQTT PASSWORD>'
-             - name: READTHEDOCS
-               value: '<ENTER READTHEDOCS TOKEN>'
-             - name: qip 
-               value: 'localhost' # This is private GPT IP              
-             - name: KUBE
-               value: '1'
-           volumes: 
-           - name: dockerpath
-             hostPath:
-               path: /var/run/docker.sock
-           dnsPolicy: "None"
-           dnsConfig:
-             nameservers:
-               - 8.8.8.8                
-               
-   ---
+            volumeMounts:
+            - name: dockerpath
+              mountPath: /var/run/docker.sock
+            ports:
+        {}
+            env:
+            - name: TSS
+              value: '0'
+            - name: SOLUTIONNAME
+              value: '{}'
+            - name: SOLUTIONDAG
+              value: '{}'
+            - name: GITUSERNAME
+              value: '{}'
+            - name: GITREPOURL
+              value: '{}'
+            - name: SOLUTIONEXTERNALPORT
+              value: '{}'
+            - name: CHIP
+              value: '{}'
+            - name: SOLUTIONAIRFLOWPORT
+              value: '{}'
+            - name: SOLUTIONVIPERVIZPORT
+              value: '{}'
+            - name: DOCKERUSERNAME
+              value: '{}'
+            - name: CLIENTPORT
+              value: '{}
+            - name: EXTERNALPORT
+              value: '{}'
+            - name: KAFKACLOUDUSERNAME
+              value: '{}'
+            - name: VIPERVIZPORT
+              value: '{}'
+            - name: MQTTUSERNAME
+              value: '{}'
+            - name: AIRFLOWPORT
+              value: '{}'
+            - name: GITPASSWORD
+              value: '<ENTER GITHUB PASSWORD>'
+            - name: KAFKACLOUDPASSWORD
+              value: '<Enter API secret>'
+            - name: MQTTPASSWORD
+              value: '<ENTER MQTT PASSWORD>'
+            - name: READTHEDOCS
+              value: '<ENTER READTHEDOCS TOKEN>'
+            - name: KUBE
+              value: '1'
+          volumes: 
+          - name: dockerpath
+            hostPath:
+              path: /var/run/docker.sock
+     ---
      apiVersion: v1
      kind: Service
      metadata:
-       name: {}-service
+       name: {}
        labels:
-         app: {}-service
+         app: {}
      spec:
        type: NodePort #Exposes the service as a node ports
        ports:
@@ -157,7 +147,6 @@ def getqip():
      qip=qip.rstrip()
      os.environ['qip']=qip  
         
-    
 def testvizconnection(portnum):
    good = 1
    #subprocess.call("curl localhost:{} &> /tmux/c.txt".format(portnum), shell=True)
