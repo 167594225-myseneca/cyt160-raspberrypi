@@ -12543,3 +12543,4 @@ Already up to date.
 [INFO 2024-11-28_16:21:14] TML Solution Studio: git push Status for project cybersecuritywithprivategpt-4a57: Everything up-to-date
 [INFO 2024-11-28_17:16:27] Deleting topic cisco-network-mainstream in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
 [INFO 2024-11-28_17:16:45] Deleting topic cisco-network-preprocess in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
+[INFO 2024-11-28_17:17:03] Deleting topic ml-data in tml_system_step_2_kafka_createtopic_dag-cyt160proj02-4a57.py
