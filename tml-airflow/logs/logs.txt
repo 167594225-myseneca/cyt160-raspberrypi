@@ -12595,3 +12595,4 @@ origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt1
 [INFO 2024-11-29_00:12:10] MQTT producing DAG in tml_read_MQTT_step_3_kafka_producetotopic_dag-cybersecuritywithprivategpt-4a57.py
 [INFO 2024-11-29_00:12:29] Preprocessing DAG in tml_system_step_4_kafka_preprocess_dag-cybersecuritywithprivategpt-4a57.py
 [INFO 2024-11-29_00:12:38] Visualization DAG in tml_system_step_7_kafka_visualization_dag-cybersecuritywithprivategpt-4a57.py
+[INFO 2024-11-29_00:13:10] PrivateGPT Step 9 DAG in tml_system_step_9_privategpt_qdrant_dag-cybersecuritywithprivategpt-4a57.py
