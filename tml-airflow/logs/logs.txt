@@ -12690,3 +12690,4 @@ origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt1
 [INFO 2024-12-02_23:41:45] Visualization DAG in tml_system_step_7_kafka_visualization_dag-cybersecuritywithprivategpt-4a57.py
 [INFO 2024-12-02_23:42:10] PrivateGPT Step 9 DAG in tml_system_step_9_privategpt_qdrant_dag-cybersecuritywithprivategpt-4a57.py
 [INFO 2024-12-02_23:42:38] Docker DAG in tml_system_step_8_deploy_solution_to_docker_dag-cybersecuritywithprivategpt-4a57.py
+[INFO 2024-12-02_23:44:34] {'name': ['Project with slug "cybersecuritywithprivategpt-4a57" already exists.']}
