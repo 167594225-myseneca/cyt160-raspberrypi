@@ -12680,3 +12680,4 @@ origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt1
 [INFO 2024-12-02_23:28:05] Visualization DAG in tml_system_step_7_kafka_visualization_dag-cybersecuritywithprivategpt-4a57.py
 [INFO 2024-12-02_23:29:34] Docker DAG in tml_system_step_8_deploy_solution_to_docker_dag-cybersecuritywithprivategpt-4a57.py
 [INFO 2024-12-02_23:30:53] {'name': ['Project with slug "cybersecuritywithprivategpt-4a57" already exists.']}
+[INFO 2024-12-02_23:40:19] Deleting topic cisco-network-mainstream in tml_system_step_2_kafka_createtopic_dag-cybersecuritywithprivategpt-4a57.py
