@@ -12932,3 +12932,4 @@ origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt1
 [INFO 2024-12-05_18:15:51] Machine Learning DAG in tml_system_step_5_kafka_machine_learning_dag-cybersecuritywithprivategpt-64f6.py
 [INFO 2024-12-05_18:15:57] Predictions DAG in tml_system_step_6_kafka_predictions_dag-cybersecuritywithprivategpt-64f6.py
 [INFO 2024-12-05_18:16:01] Visualization DAG in tml_system_step_7_kafka_visualization_dag-cybersecuritywithprivategpt-64f6.py
+[INFO 2024-12-05_18:16:16] PrivateGPT Step 9 DAG in tml_system_step_9_privategpt_qdrant_dag-cybersecuritywithprivategpt-64f6.py
