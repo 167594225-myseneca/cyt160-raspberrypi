@@ -12837,3 +12837,13 @@ branch.main.remote=origin
 branch.main.merge=refs/heads/main
 [INFO 2024-12-05_06:18:56] TML Solution Studio: Github Remote Status: origin	https://github.com/167594225-myseneca/cyt160-raspberrypi.git (fetch)
 origin	https://<personal access token hidden>@github.com/167594225-myseneca/cyt160-raspberrypi.git (push)
+[INFO 2024-12-05_06:21:27] TML Solution Studio: TML Project Creation: Creating new TML project: /cyt160-raspberrypi/tml-airflow/dags/tml-solutions/jonatest-64f6
+[INFO 2024-12-05_06:21:27] TML Solution Studio: git pull --rebase --autostash origin main Status: From https://github.com/167594225-myseneca/cyt160-raspberrypi
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[INFO 2024-12-05_06:22:02] TML Solution Studio: Starting Git commit process for project: jonatest-64f6
+[INFO 2024-12-05_06:22:02] TML Solution Studio: git commit -a Status for project jonatest-64f6: fatal: paths 'project ...' with -a does not make sense
+[INFO 2024-12-05_06:22:02] TML Solution Studio: git push origin main Status: Everything up-to-date
+[INFO 2024-12-05_06:22:02] TML Solution Studio: git add . Status: 
+[INFO 2024-12-05_06:22:02] TML Solution Studio: git commit -a Status for project jonatest-64f6: fatal: paths 'project ...' with -a does not make sense
+[INFO 2024-12-05_06:22:02] TML Solution Studio: git push Status for project jonatest-64f6: Everything up-to-date
